@@ -8,7 +8,15 @@
  * @module
  */
 
+import type * as activity from "../activity.js";
+import type * as bots from "../bots.js";
 import type * as chat from "../chat.js";
+import type * as documents from "../documents.js";
+import type * as messages from "../messages.js";
+import type * as notifications from "../notifications.js";
+import type * as standup from "../standup.js";
+import type * as subscriptions from "../subscriptions.js";
+import type * as tasks from "../tasks.js";
 
 import type {
   ApiFromModules,
@@ -17,7 +25,15 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  activity: typeof activity;
+  bots: typeof bots;
   chat: typeof chat;
+  documents: typeof documents;
+  messages: typeof messages;
+  notifications: typeof notifications;
+  standup: typeof standup;
+  subscriptions: typeof subscriptions;
+  tasks: typeof tasks;
 }>;
 
 /**
